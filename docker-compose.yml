@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  hardhat:
+    image: "node:gallium"
+    container_name: "hardhat"
+    working_dir: "/root/app"
+    command: >
+      sh -c
+      "while :; do sleep 1000; done;"
+      # "npx hardhat node"
+    volumes:
+      - "./node/app:/root/app"
+    ports:
+      - "8545:8545"
+

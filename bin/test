@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+docker compose run --rm hardhat sh -c "npx hardhat test"
+
